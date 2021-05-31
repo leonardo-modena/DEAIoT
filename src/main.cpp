@@ -31,7 +31,7 @@ void setup() {
   Serial1.begin(9600);
   pms.init();    
 
-  intervalRecord = getInterval("" + serverName + "/");               
+  intervalRecord = std::stoi(getInterval("" + serverName + "/interval-for-minute"));               
 }
 
 void loop() {
