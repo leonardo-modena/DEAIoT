@@ -16,7 +16,7 @@ SerialPM pms(PMS5003, Serial1);  // PM Serial, RX, TX
 void setup() {
 
   WiFi.begin(ssid, password);
-  Serial.println("Connecting to ws");
+  Serial.println("Connecting");
   while(WiFi.status() != WL_CONNECTED) {
     delay(500);
     Serial.print(".");
