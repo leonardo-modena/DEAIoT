@@ -42,9 +42,7 @@ void loop() {
   
   
   
-  delay(5000);   
-
-
+  delay(intervalRecord * 60);   
 }
 
 String httpGETRequest(const char* url) {
